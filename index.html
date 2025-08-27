@@ -37,25 +37,39 @@
       </td>
     </tr>
 
-    <tr>
-      <!-- Thumbnail column -->
-      <td style="padding:8px;width:25%;vertical-align:middle">
-        <img src="images/medreal2sim.png" width="100%" alt="Med-Real2Sim teaser">
+    <tr onmouseout="medreal2sim_stop()" onmouseover="medreal2sim_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='medreal2sim_image'>
+            <img src='images/medreal2sim.png' width="160" alt="Med-Real2Sim teaser (after)">
+          </div>
+          <img src='images/medreal2sim_before.png' width="160" alt="Med-Real2Sim teaser (before)">
+        </div>
+        <script type="text/javascript">
+          function medreal2sim_start() {
+            document.getElementById('medreal2sim_image').style.opacity = "1";
+          }
+          function medreal2sim_stop() {
+            document.getElementById('medreal2sim_image').style.opacity = "0";
+          }
+          medreal2sim_stop();
+        </script>
       </td>
     
-      <!-- Text column -->
-      <td style="padding:8px;width:75%;vertical-align:top">
+      <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/0b081a44ed0b8c0c4aa6bd886a60bea4-Paper-Conference.pdf">
           <span class="papertitle">Med-Real2Sim: Non-invasive Medical Digital Twins using Physics-Informed Self-Supervised Learning</span>
         </a>
         <br>
-        <strong>Keying Kuang</strong>, Frances Dean, <strong>Jack B. Jedlicki</strong>, David Ouyang, Anthony Philippakis, David Sontag, Ahmed M. Alaa
+        <strong>Keying Kuang</strong>, Frances Dean, <strong>Jack B. Jedlicki</strong>, David Ouyang,
+        Anthony Philippakis, David Sontag, Ahmed M. Alaa
         <br>
         <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2024
         <br>
+        <p></p>
       </td>
-    </tr>
-    
+    </tr>    
+
   </table>
 </body>
 </html>
