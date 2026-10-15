@@ -24,12 +24,13 @@
                 </p>
                 <p>
                   I'm a first-year Computer Science PhD student at <a href="https://www.harvard.edu/">Harvard University</a>, 
-                  working on embodied intelligence. 
+                  working on embodied intelligence, supported by the <a href="https://lacaixafoundation.org/en/fellowships">“la Caixa” Foundation Fellowship</a>
+				  and the <a href="https://seas.harvard.edu/prospective-students/prospective-graduate-students/funding-scholarship-graduate-programs">Harvard Prize Fellowship</a>. 
                 </p>
                 <p>
                   Previously, I earned two bachelor's degrees in Mathematics and Physics at the 
                   <a href="https://web.ub.edu/en/">University of Barcelona</a>. During that time, I worked on computer 
-                  vision and physics-informed neural networks at the <a href="https://alaalab.berkeley.edu/home">Alaa Lab</a> at 
+                  vision and digital twins at the <a href="https://alaalab.berkeley.edu/home">Alaa Lab</a> at 
                   <a href="https://www.berkeley.edu/">UC Berkeley</a>, on topology-informed generative models at the 
                   <a href="https://www.cvc.uab.es/">Computer Vision Center</a>, and on tensor networks for efficient 
                   physics simulations at the <a href="https://www.bsc.es/">Barcelona Supercomputing Center</a>. 
@@ -72,13 +73,14 @@
                   <span class="papertitle">Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation?</span>
                 </a>
                 <br>
-                <strong>Jack B. Jedlicki</strong>, Amish Sethi, Heng Yang
+                <strong>Jack B. Jedlicki</strong>*, Amish Sethi, Heng Yang
                 <br>
                 <em>arXiv preprint</em>, 2026
                 <br>
                 <p></p>
                 <p>
-                Evaluates whether a frontier vision-language model, used directly as a robot policy, can solve manipulation tasks that require memory.
+                We turn GPT-6-Astra into an embodied agent by connecting it to a simulated Franka arm through a simple harness. On RoboMME’s 16 memory-dependent tasks,
+				it reaches a 92.1% success rate, surpassing human performance (90.5%) and well above the best leaderboard score (60.8%).
                 </p>
               </td>
             </tr>
@@ -94,14 +96,14 @@
                   <span class="papertitle">Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs</span>
                 </a>
                 <br>
-                Tanguy Dieudonné, <strong>Jack B. Jedlicki</strong>, Heng Yang
+                Tanguy Dieudonné*, <strong>Jack B. Jedlicki</strong>*, Heng Yang
                 <br>
                 <em>NeurIPS 2026 Workshop on Embodied Spatial Reasoning</em>, 2026
                 <br>
                 <p></p>
                 <p>
-                Keeps short-term perceptual memory inside the policy and moves long-term object memory to an external, readable object ledger,
-                lifting the four-suite average on RoboMME from 45.9% to 64.3%.
+                We show that a hybrid design, keeping short-term perceptual memory inside the policy and moving long-term object memory to an external,
+				readable object ledger, reaches a 64.3% average on RoboMME, well above the previous state of the art (60.8%).
                 </p>
               </td>
             </tr>
@@ -117,7 +119,7 @@
                   <span class="papertitle">OCC4M: Object-Centric 4D Memory for Spatiotemporal Reasoning in Long-Horizon Manipulation</span>
                 </a>
                 <br>
-                <strong>Jack B. Jedlicki</strong>, Tanguy Dieudonné, Heng Yang
+                <strong>Jack B. Jedlicki</strong>*, Tanguy Dieudonné*, Heng Yang
                 <br>
                 <em>IROS 2026 Workshop on Hybrid Architectures for Embodied Autonomy</em> <strong>(Spotlight)</strong>
                 <br>
@@ -125,8 +127,8 @@
                 <br>
                 <p></p>
                 <p>
-                An object-centric 4D memory that tracks objects in a shared world frame along with their timing, motion, and containment,
-                letting a VLM pick targets for a low-level controller without the full observation history.
+                We design a memory-aware embodied agent following Occam’s razor: remove memory from the policy and give it only to the high-level planner. 
+				Our system outperforms memory-conditioned policies and VLMs that reason over raw frame history in both simulation and real-world experiments.
                 </p>
               </td>
             </tr>
@@ -166,7 +168,7 @@
                   <span class="papertitle">Med-real2sim: Non-invasive medical digital twins using physics-informed self-supervised learning</span>
                 </a>
                 <br>
-                Keying Kuang, Frances Dean, <strong>Jack B. Jedlicki</strong>, David Ouyang, Anthony Philippakis, David Sontag, Ahmed Alaa
+                Keying Kuang*, Frances Dean*, <strong>Jack B. Jedlicki</strong>*, David Ouyang, Anthony Philippakis, David Sontag, Ahmed Alaa
                 <br>
                 <em>NeurIPS</em>, 2024
                 <br>
