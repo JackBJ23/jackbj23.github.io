@@ -54,7 +54,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I’m interested in deep learning and embodied intelligence, especially robot memory and long-horizon reasoning.
+                  I'm interested in deep learning, generative world models, and long-horizon reasoning for robotics.
                 </p>
               </td>
             </tr>
@@ -64,7 +64,7 @@
             <tr bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src='images/frontier_vlm.png' width="160">
+                  <img src='images/astra.png' width="160">
                 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -78,8 +78,7 @@
                 <br>
                 <p></p>
                 <p>
-                We turn GPT-6-Astra into an embodied agent by connecting it to a simulated Franka arm through a simple harness. 
-				On RoboMME’s 16 memory-dependent tasks, it reaches a 92.1% success rate, surpassing human performance (90.5%) and well above the best leaderboard score (60.8%).
+                Evaluates whether a frontier vision-language model, used directly as a robot policy, can solve manipulation tasks that require memory.
                 </p>
               </td>
             </tr>
@@ -101,8 +100,8 @@
                 <br>
                 <p></p>
                 <p>
-                We show that a hybrid design, keeping short-term perceptual memory inside the policy and moving long-term object memory to an external,
-				readable object ledger, reaches a 64.3% average on RoboMME, above the previous state of the art (60.8%).
+                Keeps short-term perceptual memory inside the policy and moves long-term object memory to an external, readable object ledger,
+                lifting the four-suite average on RoboMME from 45.9% to 64.3%.
                 </p>
               </td>
             </tr>
@@ -126,17 +125,16 @@
                 <br>
                 <p></p>
                 <p>
-                We design a memory-aware embodied agent following Occam’s razor: remove memory from the policy and give it only to the high-level planner. 
-				A VLM planner reads from a structured 4D object memory and directs a low-level π0.5 policy, outperforming memory-conditioned policies and
-				VLMs that reason over raw frame history in both simulation and real-world experiments.            
-				</p>
+                An object-centric 4D memory that tracks objects in a shared world frame along with their timing, motion, and containment,
+                letting a VLM pick targets for a low-level controller without the full observation history.
+                </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src='images/rlhf_uncertainty.png' width="160">
+                  <img src='images/rl.png' width="160">
                 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
